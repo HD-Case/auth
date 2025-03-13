@@ -15,6 +15,8 @@
   <button>Delete Contact</button>
 </form>
 
+<% if session["user_id"] != nil %>
+
 <h3>Sales Activity</h3>
 
 <ul>
@@ -48,3 +50,7 @@
 
   <button>Submit</button>
 </form>
+
+<% else %>
+  <a href="/login">You Need To Login</a>
+<% end %>
